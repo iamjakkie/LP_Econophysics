@@ -1,0 +1,80 @@
+body {
+    background: #1c1d21;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+  }
+  
+ .container .item {
+    margin: 10px 0 3% 1px;
+    width: 300px;
+    height: 200px;
+    background-color: #141519;
+    padding: 1em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    border: solid 1px #26272b;
+    border-radius: 50px;
+    background-size: 50px 50px;
+    background-image: 
+      linear-gradient(to right, rgba(180,180,180,0.25) 0, transparent 1px),
+      linear-gradient(to bottom, rgba(180,180,180,0.25) 0, transparent 1px);
+    position: relative;
+  }
+
+.container .grid {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 150%);
+  border-radius: 50px;
+  background-blend-mode: multiply;
+}
+
+.item:hover {
+  transform: scale(1.2); 
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.chart {
+  color: grey;
+}
+
+/* .container .item:nth-child(3n+1) {
+    transform: translate(-400px, 0) scale(0);
+}
+
+.container .item:nth-child(3n+2) {
+    transform: translate(0, 400px) scale(0);
+}
+
+.container .item:nth-child(3n+3) {
+    transform: translate(400px, 0) scale(0);
+}
+
+.container .item.active {
+    transform: translate(100, 100) scale(1);
+} */
