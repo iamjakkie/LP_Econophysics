@@ -34,6 +34,7 @@ h2 {
       linear-gradient(to right, rgba(180,180,180,0.25) 0, transparent 1px),
       linear-gradient(to bottom, rgba(180,180,180,0.25) 0, transparent 1px);
     position: relative;
+    transition: transform 0.2s ease-in;
   }
 
 .container .grid {
@@ -49,7 +50,7 @@ h2 {
 }
 
 .item:hover {
-  transform: scale(1.2); 
+  transform: scale(1.1) translate(0, -5px);
 }
 
 .container {
