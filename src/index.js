@@ -77,11 +77,19 @@ function createChart(data, container) {
   svg.append("g")
     .attr("class", "x-axis")
     .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(xScale));
+      .style("font-family", "monospace")
+      .style("font-size", "0.65em")
+      .style("font-weight", "200")
+      .style("opacity", "0.5")
+      .call(d3.axisBottom(xScale));
 
   // Add y-axis with scientific notation
   svg.append("g")
     .attr("class", "y-axis")
+      .style("font-family", "monospace")
+      .style("font-size", "0.65em")
+      .style("font-weight", "200")
+      .style("opacity", "0.5")
     .call(d3.axisLeft(yScale).tickFormat(d3.format(".1e"))); // Use scientific notation format
   }
   
